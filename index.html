@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://use.fontawesome.com/d42a216320.js"></script>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interior Consultant</title>
+</head>
+
+<body>
+    <!-- Top Navigation Menu -->
+    <header class="navbar">
+        <a href="" class="logo">This Interior</a>
+        <div id="nav-links">
+            <span class="close" onclick="toggleNav()">&times;</span>
+            <div>
+                <a href="" class="nav-link active">Home</a>
+                <a href="" class="nav-link">Collection</a>
+                <a href="" class="nav-link">About</a>
+                <a href="" class="nav-link">Contact</a>
+            </div>
+        </div>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+
+    <div class="main-content">
+        <div class="details">
+            <h1>Modern Interior</h1>
+            <p class="about">A full-Service residential & commercial interior design and staging company offering
+                professional organizing & eco-services</p>
+
+            <a href="" class="read-more-link">Read More <span class="material-icons">
+                    trending_flat
+                </span></a>
+        </div>
+
+        <div class="photo">
+            <img class="room-img" src="./img/photo1.png" alt="Photo of room" srcset="">
+
+            <div class="designer-card">
+                <div class="designer-card--header">
+                    <img src="./img/photo2.png" alt="designer headshot" class="designer-headshot">
+                    <div class="designer-info">
+                        <p class="designer-name">
+                            Aliza Webber
+                        </p>
+                        <p class="designer-title">
+                            Interior Designer
+                        </p>
+                    </div>
+                </div>
+
+                <p class="about-design">Designed in 2020 by Aliza Webber</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Nathan Kratzmeyer @ devchallenges.io</p>
+    </footer>
+
+    <script>
+        function toggleNav() {
+            var links = document.getElementById("nav-links");
+            if (links.style.display === "flex") {
+                links.style.display = "none";
+            } else {
+                links.style.display = "flex";
+            }
+        }
+    </script>
+</body>
+
+</html>
